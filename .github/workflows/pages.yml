@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  # mainブランチにpushされたら自動で実行
+  push:
+    branches: ["main"]
+  # 手動でも実行できるようにする
+  workflow_dispatch:
+
+# GITHUB_TOKENの権限設定（Pagesへのデプロイに必要）
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 複数同時にデプロイが走らないように制御
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # publicフォルダをPagesとして公開する
+          path: './public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
