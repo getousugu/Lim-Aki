@@ -1,0 +1,682 @@
+/* ============================================================
+   CSS Variables
+   ============================================================ */
+:root {
+    --bg:          #0d0d0f;
+    --surface:     #161618;
+    --surface2:    #1e1e21;
+    --border:      #2e2e34;
+    --red:         #9b1c1c;
+    --red-bright:  #c0392b;
+    --red-glow:    rgba(155, 28, 28, 0.3);
+    --text:        #d0d0d4;
+    --text-dim:    #7a7a85;
+    --blue-accent: #3b7dd8;
+    --yes-color:   #3a8c5e;
+    --no-color:    #8c3a3a;
+    --unknown-color: #8c7a3a;
+    --font: 'Noto Sans JP', sans-serif;
+}
+
+/* ============================================================
+   Reset / Base
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* ============================================================
+   Screens
+   ============================================================ */
+.screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.screen.active {
+    display: flex;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+button {
+    font-family: var(--font);
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background 0.15s, transform 0.1s;
+}
+
+button:active { transform: scale(0.97); }
+
+.btn-primary {
+    background: var(--red);
+    color: #fff;
+    padding: 0.55rem 1.3rem;
+    font-weight: 700;
+}
+.btn-primary:hover { background: var(--red-bright); }
+.btn-primary:disabled { background: #333; color: #555; cursor: not-allowed; transform: none; }
+
+.btn-secondary {
+    background: var(--surface2);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+}
+.btn-secondary:hover { background: #2a2a2f; }
+
+.btn-accent {
+    background: #1a3a5e;
+    color: #a0c4ff;
+    padding: 0.55rem 1.3rem;
+    font-weight: 700;
+    border: 1px solid #2a5090;
+}
+.btn-accent:hover { background: #204870; }
+.btn-accent:disabled { background: #222; color: #444; cursor: not-allowed; transform: none; }
+
+/* ============================================================
+   Title Screen
+   ============================================================ */
+#title-screen {
+    align-items: center;
+    justify-content: center;
+}
+
+.title-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.title-deco {
+    width: 60px;
+    height: 4px;
+    background: var(--red);
+    margin-bottom: 0.5rem;
+}
+
+#title-screen h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+#title-screen p {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    margin-bottom: 3rem;
+}
+
+.title-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.title-buttons button {
+    min-width: 120px;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+/* ============================================================
+   DB Screen
+   ============================================================ */
+#db-screen {
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.db-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.db-header h2 {
+    font-size: 1.5rem;
+    color: var(--red);
+    flex: 1;
+}
+
+.db-select {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: var(--font);
+    outline: none;
+    cursor: pointer;
+}
+.db-select:focus { border-color: var(--red); }
+
+#db-search {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    width: 250px;
+    font-family: var(--font);
+}
+#db-search:focus { border-color: var(--red); outline: none; }
+
+.db-table-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.db-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.db-table th, .db-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.db-table th {
+    background: var(--surface2);
+    color: var(--text-dim);
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.db-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================================
+   Selection Screen
+   ============================================================ */
+#selection-screen {
+    padding: 1.5rem 2rem;
+}
+
+.selection-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.selection-header p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.selection-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-list {
+    flex: 1;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.35rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    user-select: none;
+}
+.checkbox-list label:hover { background: rgba(255,255,255,0.05); }
+
+.selection-footer {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ============================================================
+   Game Screen
+   ============================================================ */
+
+/* Header */
+.game-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.game-title {
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Main area */
+.game-main {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Left: Chat */
+.game-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border);
+    min-width: 0;
+}
+
+.chat-log {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.msg {
+    max-width: 85%;
+    padding: 0.6rem 0.9rem;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+.msg-user {
+    align-self: flex-end;
+    background: var(--surface2);
+    border-left: 3px solid var(--red);
+}
+
+.msg-answer {
+    align-self: flex-start;
+    background: var(--surface);
+    border-left: 3px solid var(--border);
+}
+
+.msg-answer.ans-yes  { border-left-color: var(--yes-color); }
+.msg-answer.ans-no   { border-left-color: var(--no-color); }
+.msg-answer.ans-unk  { border-left-color: var(--unknown-color); }
+
+.msg-system {
+    align-self: center;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    font-style: italic;
+    background: none;
+    border: none;
+    padding: 0.2rem 0;
+}
+
+/* Right: Question list */
+.game-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 340px;
+    overflow: hidden;
+}
+
+.questions-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.question-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Section header (e.g. 「囚人」「スキル」) */
+.q-section-header {
+    padding: 0.35rem 1rem 0.25rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    user-select: none;
+}
+
+/* Question item */
+.q-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+    user-select: none;
+}
+
+.q-item:hover { background: rgba(255,255,255,0.05); }
+
+.q-item.selected {
+    background: rgba(155, 28, 28, 0.2);
+    border-left: 3px solid var(--red);
+    color: #fff;
+}
+
+/* Gray out todo items */
+.q-item.q-todo {
+    opacity: 0.45;
+    cursor: default;
+}
+.q-item.q-todo:hover { background: transparent; }
+
+.q-item-text { flex: 1; }
+
+/* Type badges */
+.q-badge {
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.15rem 0.45rem;
+    border-radius: 2px;
+    letter-spacing: 0.03em;
+}
+
+.badge-suggest {
+    background: rgba(59, 125, 216, 0.25);
+    color: #7eb8f7;
+    border: 1px solid rgba(59, 125, 216, 0.4);
+}
+
+.badge-number {
+    background: rgba(200, 130, 30, 0.2);
+    color: #e8a040;
+    border: 1px solid rgba(200, 130, 30, 0.4);
+}
+
+.badge-todo {
+    background: rgba(100, 100, 110, 0.2);
+    color: #666;
+    border: 1px solid rgba(100, 100, 110, 0.3);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.game-footer {
+    display: flex;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    min-height: 100px;
+}
+
+.footer-left {
+    flex: 3;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-right: 1px solid var(--border);
+}
+
+.active-q-label {
+    font-size: 0.82rem;
+    color: var(--red-bright);
+    min-height: 1.2rem;
+    font-style: italic;
+}
+
+.input-row {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.template-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.8rem;
+    border-radius: 3px;
+    min-height: 42px;
+}
+
+.template-placeholder {
+    color: var(--text-dim);
+    font-style: italic;
+}
+
+.template-input {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.15s;
+    min-width: 60px;
+    text-align: center;
+}
+
+.template-input:focus { border-color: var(--red); }
+
+.template-select {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+}
+.template-select:focus { border-color: var(--red); }
+
+/* Autocomplete within template */
+.ac-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-list {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    min-width: 150px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    z-index: 50;
+    max-height: 180px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+}
+
+.autocomplete-list.open { display: block; }
+
+.ac-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.88rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+}
+.ac-item:hover, .ac-item.active { background: rgba(155,28,28,0.2); color: #fff; }
+
+/* Footer Right: Answer */
+.footer-right {
+    flex: 2;
+    max-width: 340px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-right .panel-title {
+    padding: 0 0 0.3rem 0;
+    border-bottom: none;
+}
+
+.answer-row {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.select-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.answer-dropdown {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    z-index: 50;
+    max-height: 220px;
+    overflow-y: auto;
+    display: none;
+}
+
+.answer-dropdown.open { display: block; }
+
+.answer-dropdown .ac-item:hover { background: rgba(27, 58, 94, 0.5); }
+
+.selected-answer-label {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    min-height: 1rem;
+    padding-left: 0.1rem;
+}
+
+/* ============================================================
+   Modal
+   ============================================================ */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(0,0,0,0.75);
+    align-items: center;
+    justify-content: center;
+}
+.modal.active { display: flex; }
+
+.modal-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+}
+
+.modal-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.modal-box p {
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 680px) {
+    .game-main { flex-direction: column; }
+    .game-right { max-width: none; border-top: 1px solid var(--border); flex: 1; }
+    .game-footer { flex-direction: column; }
+    .footer-right { max-width: none; border-top: 1px solid var(--border); }
+}

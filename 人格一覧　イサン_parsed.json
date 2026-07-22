@@ -1,0 +1,938 @@
+[
+  {
+    "title_raw": "LCB 囚人",
+    "characteristics": [
+      "LCB",
+      "リンバス・カンパニー"
+    ],
+    "affiliations": [
+      "Limbus Company"
+    ],
+    "used_keywords": [
+      "沈潜",
+      "ダメージ量増加",
+      "脆弱"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "南部セブン協会 6課",
+    "characteristics": [
+      "フィクサー",
+      "セブン協会"
+    ],
+    "affiliations": [
+      "セブン協会"
+    ],
+    "used_keywords": [
+      "破裂",
+      "麻痺",
+      "脆弱"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "暴食"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "剣契 殺手(コムゲ　サルス)",
+    "characteristics": [
+      "組織",
+      "剣契"
+    ],
+    "affiliations": [
+      "剣契"
+    ],
+    "used_keywords": [
+      "呼吸",
+      "脆弱"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "憤怒"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "def_types": [
+          "反撃"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "開花E.G.O::壇香梅",
+    "characteristics": [
+      "技術解放連合"
+    ],
+    "affiliations": [
+      "技術解放連合"
+    ],
+    "used_keywords": [
+      "振動",
+      "沈潜",
+      "沈潜殺到",
+      "脆弱",
+      "残香"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "def_types": [
+          "回避"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "奥歯事務所フィクサー",
+    "characteristics": [
+      "フィクサー",
+      "奥歯事務所"
+    ],
+    "affiliations": [
+      "奥歯"
+    ],
+    "used_keywords": [
+      "振動",
+      "脆弱",
+      "防御レベル減少",
+      "捨てる"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "色欲"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "憤怒"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "W社3級整理要員",
+    "characteristics": [
+      "W社"
+    ],
+    "affiliations": [
+      "W社"
+    ],
+    "used_keywords": [
+      "破裂",
+      "充電",
+      "クイック",
+      "束縛",
+      "脆弱",
+      "次元の亀裂",
+      "充電力場"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "def_types": [
+          "回避"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "ピークォド号 1等航海士",
+    "characteristics": [
+      "ピークォド号"
+    ],
+    "affiliations": [
+      "ピークォド号"
+    ],
+    "used_keywords": [
+      "出血",
+      "呼吸",
+      "束縛",
+      "脆弱"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "def_types": [
+          "回避"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "南部ディエーチ協会4課",
+    "characteristics": [
+      "フィクサー",
+      "ディエーチ協会"
+    ],
+    "affiliations": [
+      "ディエーチ協会"
+    ],
+    "used_keywords": [
+      "沈潜",
+      "脆弱",
+      "挑発値",
+      "捨てる",
+      "探求した知識",
+      "加護"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "色欲"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "薬指 点描派スチューデント",
+    "characteristics": [
+      "指",
+      "薬指",
+      "点描派",
+      "スチューデント"
+    ],
+    "affiliations": [
+      "薬指"
+    ],
+    "used_keywords": [
+      "火傷",
+      "出血",
+      "破裂",
+      "振動",
+      "沈潜",
+      "脆弱",
+      "攻撃レベル増加"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "色欲"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "色欲"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "ロボトミーE.G.O::厳粛な哀悼",
+    "characteristics": [
+      "ロボトミー本社",
+      "E.G.O装備"
+    ],
+    "affiliations": [
+      "旧L社"
+    ],
+    "used_keywords": [
+      "沈潜",
+      "クイック",
+      "脆弱",
+      "弾丸",
+      "再装填",
+      "生きた蝶・死んだ蝶"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "def_types": [
+          "防御"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "LCE E.G.O:: 提灯",
+    "characteristics": [
+      "LCE",
+      "リンバス・カンパニー",
+      "E.G.O装備"
+    ],
+    "affiliations": [
+      "Limbus Company"
+    ],
+    "used_keywords": [
+      "破裂",
+      "束縛",
+      "脆弱",
+      "破壊不能コイン",
+      "挑発値",
+      "好餌妖精"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "暴食"
+        ],
+        "def_types": [
+          "反撃"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "南部リウ協会3課",
+    "characteristics": [
+      "フィクサー",
+      "リウ協会"
+    ],
+    "affiliations": [
+      "リウ協会"
+    ],
+    "used_keywords": [
+      "火傷",
+      "脆弱"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "憤怒"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "憤怒"
+        ],
+        "def_types": [
+          "反撃"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "N社E.G.O::凶弾",
+    "characteristics": [
+      "N社",
+      "E.G.O装備"
+    ],
+    "affiliations": [
+      "N社"
+    ],
+    "used_keywords": [
+      "出血",
+      "呼吸",
+      "ダメージ量増加",
+      "脆弱",
+      "破壊不能コイン",
+      "引き裂かれた追憶",
+      "凶弾"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "憤怒"
+        ],
+        "atk_types": [
+          "打撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "色欲"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "atk_types": [
+          "貫通"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "傲慢"
+        ],
+        "def_types": [
+          "マッチ可能反撃"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": []
+    }
+  },
+  {
+    "title_raw": "黒獣-午 筆頭",
+    "characteristics": [
+      "H社",
+      "黒獣",
+      "黒獣筆頭",
+      "黒獣-午",
+      "ジア家"
+    ],
+    "affiliations": [
+      "H社"
+    ],
+    "used_keywords": [
+      "破裂",
+      "振動",
+      "呼吸",
+      "クイック",
+      "束縛",
+      "脆弱",
+      "攻撃威力増加",
+      "攻撃レベル増加",
+      "威力増加",
+      "マッチ可能ガード",
+      "破壊不能コイン",
+      "援護攻撃",
+      "尊命",
+      "黒獣丸染",
+      "敵陣走破",
+      "脳震盪",
+      "脚力【午】",
+      "号令"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [
+          "怠惰"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 3
+      },
+      "skill2": {
+        "sin_types": [
+          "嫉妬"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 2
+      },
+      "skill3": {
+        "sin_types": [
+          "暴食"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "暴食"
+        ],
+        "def_types": [
+          "マッチ可能ガード"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": [
+        {
+          "name": "黒風馬脚月斬",
+          "coin_count": 1,
+          "sin_types": [
+            "暴食"
+          ],
+          "atk_types": [
+            "斬撃"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title_raw": "蜘蛛の巣 人差し指の親方",
+    "characteristics": [
+      "人差し指",
+      "指",
+      "蜘蛛の巣",
+      "神託代行者"
+    ],
+    "affiliations": [
+      "人差し指"
+    ],
+    "used_keywords": [
+      "火傷",
+      "沈潜",
+      "呼吸",
+      "麻痺",
+      "束縛",
+      "脆弱",
+      "破壊不能コイン",
+      "広域乱射",
+      "加護",
+      "指令の印",
+      "指令の加護",
+      "カルマ",
+      "指令",
+      "指令対象",
+      "指令[端末機] I",
+      "指令[端末機] II",
+      "指令[端末機] III",
+      "指令[端末機] IV",
+      "解禁",
+      "解禁 - I",
+      "解禁 - II",
+      "解禁 - III",
+      "代行 [ヘルメス]",
+      "シン(心) - 運命",
+      "傷を隠した仮面",
+      "じりじりと焼ける傷",
+      "満たされた承認欲求",
+      "手斧で肋骨を叩き割るときは…",
+      "スティレットで肺を貫き刺すときは…",
+      "バスタードソードで肩と頭を叩き潰すときは…",
+      "レイピアで体に10個以上の穴を開けるべきときは…",
+      "ハンマーで後頭部を潰すべきときは…",
+      "大剣で胴体を真っ二つに裂くべきときは…",
+      "ランスで20インチの穴を穿つべきときは…",
+      "鞭で肉片を万枚引き剥がすべきときは…",
+      "鎌で…誰かのように、空間に沿って斬り裂くべきときは…",
+      "指令耽溺"
+    ],
+    "skills": {
+      "skill1": {
+        "sin_types": [],
+        "atk_types": [],
+        "coin_count": null
+      },
+      "skill2": {
+        "sin_types": [],
+        "atk_types": [],
+        "coin_count": null
+      },
+      "skill3": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "atk_types": [
+          "斬撃"
+        ],
+        "coin_count": 1
+      },
+      "defense": {
+        "sin_types": [
+          "憂鬱"
+        ],
+        "def_types": [
+          "回避"
+        ],
+        "coin_count": null,
+        "atk_types": []
+      },
+      "special": [
+        {
+          "name": "三百三十巻きつけて",
+          "coin_count": 3,
+          "sin_types": [
+            "暴食"
+          ],
+          "atk_types": [
+            "打撃"
+          ]
+        },
+        {
+          "name": "声を出さず憂く貫き",
+          "coin_count": 2,
+          "sin_types": [
+            "傲慢"
+          ],
+          "atk_types": [
+            "貫通"
+          ]
+        },
+        {
+          "name": "Furioso-Replica",
+          "coin_count": 0,
+          "sin_types": [
+            "憤怒"
+          ],
+          "atk_types": [
+            "斬撃"
+          ]
+        }
+      ]
+    }
+  }
+]
